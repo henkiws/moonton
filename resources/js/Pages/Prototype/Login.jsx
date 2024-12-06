@@ -43,13 +43,15 @@ export default function Login() {
                                 </div>
                             </div>
                             <div className="grid space-y-[14px] mt-[30px]">
-                                <Button
-                                    className="bg-alerange"
-                                >
-                                    <span className="text-base font-semibold">
-                                        Sign In
-                                    </span>
-                                </Button>
+                                <Link href={route('prototype.dashboard')}>
+                                    <Button
+                                        className="bg-alerange"
+                                    >
+                                        <span className="text-base font-semibold">
+                                            Start Watching
+                                        </span>
+                                    </Button>
+                                </Link>
                                 <Link href={route('prototype.register')}>
                                     <Button
                                         className="border border-white"
