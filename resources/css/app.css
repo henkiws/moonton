@@ -1,3 +1,12 @@
+@import "sidebar.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.flex::before,
+.flex::after {
+    display: none !important;
+}
+.top-search {
+    background-image: url('/icons/ic_search.svg');
+}
