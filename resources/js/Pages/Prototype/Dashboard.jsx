@@ -28,7 +28,7 @@ export default function Dashboard() {
 
                         {[1,2,3,4].map( i => ( 
                             <FeaturedMovie 
-                                key={i}
+                                key={`featmovie${i}`}
                                 slug="the-batman-in-love"
                                 name={`lorem ipsum do amet ${i}`}
                                 category="ok"
@@ -46,7 +46,7 @@ export default function Dashboard() {
                         
                         {[1,2,3,4,5,6,7].map(i=>(
                             <MovieCard 
-                                key={1}
+                                key={`movie${i}`}
                                 slug="the-batman-in-love"
                                 name={`lorem ipsum do amet ${i}`}
                                 category="ok"
